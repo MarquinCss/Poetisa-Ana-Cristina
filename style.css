@@ -1,0 +1,42 @@
+.header{
+    background-color: var(--fundo2) !important;
+    
+}
+
+
+.header ul{
+    display: flex;
+    gap:20px !important;
+    margin-right: 100px;
+}
+
+.header li{
+    font-size:22px;
+}
+
+.main-logo{
+    margin-left:100px;
+}
+
+.landing-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 100px;
+    padding: 50px;
+    height:650px;
+    background-color: var(--fundo1);
+}
+
+.main-img{
+    margin-left: 70px;
+}
+
+.landing-page h1{
+    max-width: 300px;
+}
+
+.landing-page p{
+    max-width: 400px ;
+}

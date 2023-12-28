@@ -10,6 +10,16 @@
 :root {
     --fundo1: #FAD2E5; 
     --fundo2: #F8E5E5; 
-    --tamanho-fonte: 16px; 
+    --text-color:#525252;
   }
- 
+
+  #icone-ponta {
+    position: fixed;
+    bottom: 10px; 
+    right: 10px; 
+    z-index: 9999; 
+    width: 70px;
+    height: 70px;
+}
+
+

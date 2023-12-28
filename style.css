@@ -12,7 +12,14 @@
 
 .header li{
     font-size:22px;
+    color:#FE5F99 ;
 }
+
+.header a{
+    color:#FE5F99;
+}
+
+
 
 .main-logo{
     margin-left:100px;
@@ -20,6 +27,7 @@
 
 .landing-page{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: left;
@@ -27,16 +35,161 @@
     padding: 50px;
     height:650px;
     background-color: var(--fundo1);
+    padding-top:100px;
 }
 
 .main-img{
     margin-left: 70px;
+    animation: moveUpDown 2s infinite alternate ease-in-out;
+    position: relative;
 }
+@keyframes moveUpDown {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 30px; /* Ou qualquer valor desejado para o movimento para baixo */
+    }
+  }
 
 .landing-page h1{
     max-width: 300px;
+    font-weight: 800;
+    color:#46CC6B;
+}
+
+.landing-page span{
+   color: #FE5F99;
 }
 
 .landing-page p{
     max-width: 400px ;
 }
+
+
+.landing-page button {
+    appearance: button;
+    width: 200px;
+    background-color: #46CC6B;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    outline: none;
+   }
+   
+   .landing-page  button:after {
+    background-clip: padding-box;
+    background-color: #1cf65d;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   }
+   
+   .landing-page button:main, button:focus {
+    user-select: auto;
+   }
+   
+   .landing-page button:hover:not(:disabled) {
+    filter: brightness(1.1);
+   }
+   
+   .landing-page button:disabled {
+    cursor: auto;
+   }
+   
+   .landing-page button:active:after {
+    border-width: 0 0 0px;
+   }
+   
+   .landing-page button:active {
+    padding-bottom: 10px;
+   }
+
+
+   .conteudo{
+display: flex;
+flex-direction: column;
+gap:20px;
+   }
+   
+
+   /*Projetos*/
+
+   .content{
+    height: 500px;
+    background-color: var(--fundo2);
+    padding: 50px;
+   }
+
+
+   .content h2{
+
+   }
+
+/*Sobre*/
+   .content2{
+    display: flex;
+    height: 700px;
+    background-color: var(--fundo2);
+    padding: 50px 0;
+   }
+
+   .content2 .poetas{
+
+    width: 600px;
+    padding: 0;
+
+   }
+
+
+   /*NO RESPONSIVO
+   .main-img{
+    display: none;
+   }
+   */
+ 
+   .content2 #sobre{
+    color: #46CC6B;;
+   }
+
+
+   .content2 p{
+    max-width: 550px;
+    font-size:30px;
+    text-align: justify;
+   }
+   .content2 .text-img{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    margin-top: 100px;
+
+   }

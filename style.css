@@ -196,5 +196,16 @@ gap:20px;
 
 
    .fotinhos{
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+   .fotinhos img{
+    width: 300px;
+    height: 270px;
    }

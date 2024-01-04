@@ -46,7 +46,7 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
 </p>
 
-<button>Ver meu perfil</button>
+<button class="button">Ver meu perfil</button>
 </div>
 
 <img src="./img/main-img.png" class="main-img" alt="Ana Cristina com a camiseta das DIVAS">
@@ -54,17 +54,27 @@
 
 
     <section class="content">
-<h2 id="projetos">Projetos</h2>
-<div class="fotinhos">
-<a href="musica.html">
-    <img src="img/musica.png" alt="">
-    </a>
-    <a href="artesanato.html">
-    <img src="img/musica.png" alt="">
-    </a>
-    <a href="poesia.html">
-    <img src="img/musica.png" alt="">
-</a>
+        <div class="wrapper">
+
+            <div class="item">
+              <div class="polaroid"><img src="./img/musica.png">
+                <div class="caption">Música</div>
+              </div>
+            </div>
+          
+            <div class="item item2">
+              <div class="polaroid"><img src="./img/poetas.jpg">
+                <div class="caption">Artesanatos</div>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="polaroid"><img src="./img/musica.png">
+                <div class="caption">Poesia</div>
+              </div>
+            </div>
+          
+          </div>
 </div>
 
     </section>
@@ -83,6 +93,31 @@
     </div>
     </div>
             </section>
+
+            <!--Contato-->
+
+        <Section class="contato">
+            <div class="tira"> <p>“Posso fazer, pensar e escrever. Tudo isso e mais um pouco para você!”</p> </div>
+            <div class="conteudo">
+
+<div class="contate-me">
+<h2>Contacte-me</h2>
+<form action="https://api.staticforms.xyz/submit" method="post">
+    <div class="nomemail">
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="text" name="email" placeholder="Your Email" />
+</div>
+    <textarea name="message"></textarea>
+    
+    <input class="button" type="submit" value="Submit" />
+</form>
+
+</div>
+
+            </div>
+
+
+        </Section>
     
 <img src="img/t.webp" alt="Icone do WhatsApp" id="icone-ponta">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

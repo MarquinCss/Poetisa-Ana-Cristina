@@ -1,0 +1,125 @@
+main{
+    height: 100vh;
+    margin-top:120px;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAD2E5;
+   
+}
+
+main .conteudo-titulo{
+    display: flex;
+    flex-direction: column;
+    max-width:700px;
+    gap: 24px;
+ 
+}
+
+
+main .divajuda{
+    display: flex;
+    gap:320px;
+}
+
+.conteudo-titulo h2{
+    font-size: 36px;
+    font-weight: 600;
+    color:#FE5F99;
+}
+
+.conteudo-titulo p{
+width: 100%;
+max-width: 600px;
+font-size: 24px;
+line-height: 36px;
+text-align: left;
+}
+
+/*Button*/
+
+.cssbuttons-io-button {
+    outline-offset: 0;
+    outline: none;
+    background: #FE5F99;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    width: 282px;
+    height: 54px;
+    text-align: center;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 4.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #e206d0;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+    outline: none;
+  }
+  
+  .cssbuttons-io-button:focus{
+    outline: none;
+  }
+  .cssbuttons-io-button .icon svg {
+    width: 4.1em;
+    transition: transform 0.3s;
+    color: #FE5F99;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+
+  #img-pro{
+    position: relative;
+    z-index: 999;
+  }
+
+
+  .magicpattern { 
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    position:relative;
+    bottom:350px;
+    left:100px;
+    z-index: 99;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M952.5 647Q905 794 780 885t-280 91q-155 0-280-91T47.5 647Q0 500 47.5 353T220 115q125-91 280-91t280 91q125 91 172.5 238t0 294Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23FFC2E1%22 d=%22M952.5 647Q905 794 780 885t-280 91q-155 0-280-91T47.5 647Q0 500 47.5 353T220 115q125-91 280-91t280 91q125 91 172.5 238t0 294Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  }
+  
+  /*img*/

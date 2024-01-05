@@ -11,6 +11,18 @@
         body {
           margin-top: 80px; /* Altura do navbar fixo (ajuste conforme necessário) */
         }
+              /* Adicione seu estilo aqui se necessário */
+              .conteudo-titulo {
+            transition: transform 0.5s, opacity 0.5s;
+        }
+
+        .main-projeto-img {
+            transition: transform 0.5s;
+        }
+
+        .main-projeto-img.image-transition {
+            transform: translateY(20px);
+        }
       </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Poetisa Ana Cristina - Projetos</title>
@@ -42,43 +54,33 @@
     </nav>
 
 
+    <main class="main2 main3" id="meuMain">
+        <div class="divajuda">
+            <div class="conteudo-titulo">
+                <h2>Letras Conscientes!</h2>
+                <p>Amo compor músicas que falam sobre como evitar bullying.</p>
+                <!--Button-->
+                <button onclick="verificarCodigo()" class="cssbuttons-io-button">
+                    Próximo
+                    <div class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"
+                            ></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
 
-<main>
-<div class="divajuda">
-<div class="conteudo-titulo">
-<h2>Letras Conscientes!</h2>
-<p>Amo compor músicas que falam sobre como evitar bullying.</p>
-<!--Button-->
-<button onclick="verificarCodigo()" class="cssbuttons-io-button">
-  Próximo
-      <div class="icon">
-        <svg
-          height="24"
-          width="24"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <path
-            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </div>
-    </button>
-</div>
+            <div class="main-projeto-img">
+                <img src="musica.png" id="img-pro" height="280" width="280" alt="Imagem de música">
 
-<div class="main-projeto-img">
-    <svg id="img-pro" xmlns="http://www.w3.org/2000/svg" height="280" width="280" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FE5F99" d="M96 96V256c0 53 43 96 96 96s96-43 96-96H208c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V192H208c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V128H208c-8.8 0-16-7.2-16-16s7.2-16 16-16h80c0-53-43-96-96-96S96 43 96 96zM320 240v16c0 70.7-57.3 128-128 128s-128-57.3-128-128V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 89.1 66.2 162.7 152 174.4V464H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H216V430.4c85.8-11.7 152-85.3 152-174.4V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v24z"/></svg>
-<div class="magicpattern">
-
-</div>
-
-</div>
-
-</div>
-
-</main>
+                <img id="blob" src="" class="magicpattern" alt="Imagem de padrão mágico">
+            </div>
+        </div>
+    </main>
 
 
 
@@ -88,5 +90,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="projetos.js"></script>
 </body>
 </html>

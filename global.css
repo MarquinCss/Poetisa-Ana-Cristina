@@ -6,9 +6,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* Adicione estas regras de estilo ao seu arquivo de estilo CSS */
+.navbar-light .navbar-nav .nav-link {
+  color: #FE5F99 !important; /* Verde - você pode ajustar o código de cor conforme desejado */
+}
+
+
+
 
 :root {
-    --fundo1: #FAD2E5; 
+    --fundo1: #FED9EA; 
     --fundo2: #F8E5E5; 
     --text-color:#525252;
   }

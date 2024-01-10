@@ -285,10 +285,11 @@ gap:20px;
    .contate-me{
     background-color: #FFC2E1;
     width: 406px;
-    height: 450px;
+    height: 400px;
     text-align: center;
     margin-left: 400px; /*No responsivo deve ficar no centro...*/
     z-index: 999;
+    
    }
 
    .contate-me h2{
@@ -338,13 +339,25 @@ gap:10px;
     background-color: #F8E5E5;
     outline: none;
     border: none;
+    padding: 0.8rem;
  }
 
 
  form textarea{
-    width: 332px;
-    height: 200px !important;
+    width: 350px;
+    height: 120px !important;
     background-color: #F8E5E5;
     outline: none;
     border: none;
+    padding: 0.4rem;
+    resize: none;
+ }
+
+ form label{
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: transparent;
+  display: block;
+  position: absolute;
  }

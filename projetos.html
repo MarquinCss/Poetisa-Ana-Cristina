@@ -29,7 +29,8 @@
     <title>Poetisa Ana Cristina - Projetos</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light header  fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light header  fixed-top" role="navigation">
         <a class="navbar-brand" href="#">
             <img src="./img/main-logo.png" alt="Logo" width="200" height="120" class="d-inline-block align-top main-logo">
         </a>
@@ -54,9 +55,8 @@
         </div>
     </nav>
 
-
-    <main class="main2 main3" id="meuMain">
-        <div class="divajuda">
+    <main class="main2 main3" id="meuMain" role="main">
+        <div class="divajuda" aria-label="Conteúdo Principal de Projetos">
             <div class="conteudo-titulo">
                 <h2>Letras Conscientes!</h2>
                 <p>Amo compor músicas que falam sobre como evitar bullying.</p>
@@ -75,18 +75,15 @@
                 </button>
             </div>
 
-            <div class="main-projeto-img">
-                <img src="musica.png" id="img-pro" height="280" width="280" alt="Imagem de música">
+            <div class="main-projeto-img" aria-label="Imagens de Projetos">
+                <img src="musica.png" id="img-pro" height="280" width="280" alt="Imagem de música" aria-label="Imagem de música">
 
-                <img id="blob" src="" class="magicpattern" alt="Imagem de padrão mágico">
+                <img id="blob" src="" class="magicpattern" alt="Imagem de padrão mágico" aria-label="Imagem de padrão mágico">
             </div>
         </div>
     </main>
 
-
-
-
-    <img src="img/t.webp" alt="Icone do WhatsApp" id="icone-ponta">
+    <img src="img/t.webp" alt="Icone do WhatsApp" id="icone-ponta" role="img" aria-label="Ícone do WhatsApp">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>

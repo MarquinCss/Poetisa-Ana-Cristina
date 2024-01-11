@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light header  fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light header  fixed-top" role="navigation">
         <a class="navbar-brand" href="#">
             <img src="./img/main-logo.png" alt="Logo" width="200" height="120" class="d-inline-block align-top main-logo">
         </a>
@@ -44,7 +45,15 @@
         </div>
     </nav>
 
-    <section class="landing-page">
+    <!-- Atalhos para Acessibilidade -->
+    <nav role="navigation" aria-label="Atalhos para Acessibilidade">
+        <ul>
+            <li> <a href="#conteudoprincipal">Pular para conteúdo principal do site</a></li>
+            <li> <a href="#conteudoprincipal">Pular para conteúdo principal do site</a></li>
+        </ul>
+    </nav>
+
+    <main class="landing-page" id="conteudoprincipal" role="main">
         <div class="conteudo">
             <h1>Poetisa da <span>Conscientização</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
@@ -55,10 +64,9 @@
         </div>
 
         <img src="./img/main-img.png" class="main-img" alt="Ana Cristina posando com a camiseta das DIVAS">
-    </section>
+    </main>
 
-
-    <section class="content">
+    <section class="content" role="region" aria-label="Projetos">
         <div class="wrapper">
 
             <div class="item">
@@ -80,17 +88,11 @@
             </div>
 
         </div>
-        </div>
-
     </section>
 
-
-
-
-    <section class="content2">
+    <section class="content2" role="region" aria-label="Quem é Ana Cristina?">
         <div class="text-img">
             <img src="img/poetas.jpg" class="poetas" alt="Ana Cristina, sentada ao lado de poetas antigos.">
-
 
             <div class="texto-sobre">
                 <h2 id="sobre">Quem é Ana Cristina?</h2>
@@ -101,9 +103,9 @@
         </div>
     </section>
 
-    <!--Contato-->
+    <!-- Contato -->
 
-    <Section class="contato">
+    <section class="contato" role="region" aria-label="Contato">
         <div class="tira">
             <p>“Posso fazer, pensar e escrever. Tudo isso e mais um pouco para você!”</p>
         </div>
@@ -112,7 +114,7 @@
             <div class="contate-me">
 
                 <h2>Contacte-me</h2>
-                <!--StaticForms-->
+                <!-- StaticForms -->
                 <form action="https://api.staticforms.xyz/submit" method="post">
 
                     <input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
@@ -123,7 +125,6 @@
                         <input type="text" name="nome" placeholder="Seu nome:">
                         <label for="email">Seu Endereço de E-mail:</label>
                         <input type="text" name="email" placeholder="Seu E-mail:" />
-
                     </div>
                     <textarea placeholder="Digite aqui sua mensagem para a Poetisa!" name="message"></textarea>
 
@@ -133,11 +134,9 @@
             </div>
 
         </div>
+    </section>
 
-
-    </Section>
-
-    <img src="img/t.webp" alt="Falar com a Ana Cristina no WhatsApp" id="icone-ponta">
+    <img src="img/t.webp" alt="Falar com a Ana Cristina no WhatsApp" id="icone-ponta" role="img" aria-label="Ícone do WhatsApp">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

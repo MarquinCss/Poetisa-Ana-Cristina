@@ -42,6 +42,9 @@
     margin-left: 70px;
     animation: moveUpDown 2s infinite alternate ease-in-out;
     position: relative;
+
+    
+   
 }
 @keyframes moveUpDown {
     0% {
@@ -98,6 +101,7 @@ gap:20px;
   background:#FFB9D2;
   padding: 1rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
   
 }
 .polaroid > img{
@@ -353,7 +357,7 @@ gap:10px;
     resize: none;
  }
 
- form label{
+ .invisivelparausuarios{
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;

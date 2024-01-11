@@ -42,8 +42,6 @@ text-align: left;
 /*Button*/
 
 .cssbuttons-io-button {
-    outline-offset: 0;
-    outline: none;
     background: #FE5F99;
     color: white;
     font-family: inherit;
@@ -84,12 +82,9 @@ text-align: left;
   
   .cssbuttons-io-button:hover .icon {
     width: calc(100% - 0.6em);
-    outline: none;
   }
   
-  .cssbuttons-io-button:focus{
-    outline: none;
-  }
+
   .cssbuttons-io-button .icon svg {
     width: 4.1em;
     transition: transform 0.3s;

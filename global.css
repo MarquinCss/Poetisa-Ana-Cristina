@@ -12,6 +12,10 @@
 }
 
 
+.color{
+  color: #FE5F99  !important;
+}
+
 
 
 :root {
@@ -48,7 +52,6 @@
   letter-spacing: .8px;
   line-height: 20px;
   margin: 0;
-  outline: none;
   overflow: visible;
   padding: 13px 19px;
   text-align: center;
@@ -60,7 +63,7 @@
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  outline: none;
+
  }
  
 .button:after {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,10 +114,10 @@
 
                 <h2>Contacte-me</h2>
                 <!-- StaticForms -->
-                <form action="https://api.staticforms.xyz/submit" method="post">
+                <form id="form" action="https://api.staticforms.xyz/submit" method="post">
 
-                    <input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
-                    <input type="hidden" name="redirectTo" value="index.html">
+                    <input type="hidden" name="accessKey" value="e252c591-ad8d-43f7-a0d3-ec3c6460f470">
+                    <input type="hidden" name="redirectTo" value="https://trabalheconosco.vagas.com.br/totvs/2d1b3bc5-c5c7-4c90-aa81-707098eda958">
 
                     <div class="nomemail">
                         <label class="invisivelparausuarios" for="nome">Seu nome:</label>
@@ -127,7 +126,7 @@
                         <input type="text" name="email" placeholder="Seu E-mail:" />
                     </div>
                     <label class="invisivelparausuarios" for="mensagem">Digitar mensagem nesse espaço de texto:</label>
-                    <textarea name="mensagem" placeholder="Digite aqui sua mensagem para a Poetisa!" name="message"></textarea>
+                    <textarea name="mensagem" placeholder="Digite aqui sua mensagem para a Poetisa!"></textarea>
 
                     <input class="button" type="submit" value="Submit" />
                 </form>
@@ -138,6 +137,24 @@
     </section>
 
     <img src="img/t.webp" alt="Falar com a Ana Cristina no WhatsApp" id="icone-ponta" role="img" aria-label="Ícone do WhatsApp">
+    <script>
+    
+    document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        var nome = document.querySelector('[name="nome"]').value;
+        var email = document.querySelector('[name="email"]').value;
+        var mensagem = document.querySelector('[name="mensagem"]').value;
+
+        console.log('Nome:', nome);
+        console.log('E-mail:', email);
+        console.log('Mensagem:', mensagem);
+
+        // Adicione aqui o código para enviar os dados para a API StaticForms.
+    });
+
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

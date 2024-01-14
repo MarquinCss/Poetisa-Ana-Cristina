@@ -35,18 +35,16 @@ body{
   align-items: center;
   text-align: left;
   gap: 20px; /* Ajuste conforme necessário */
-  padding: 50px;
   height: 100vh;
   background-color: var(--fundo1);
-  padding-top: 100px;
-  margin: 0 auto; /* Isso centralizará a div .landing-page */
-  max-width:100vw; /* Adicione a largura máxima desejada */
+  width: 100%;
+
 }
 
 .main-img{
     margin-left: 70px;
     animation: moveUpDown 2s infinite alternate ease-in-out;
-    position: relative;
+    position:relative;
 
   
    
@@ -82,133 +80,9 @@ flex-direction: column;
 gap:20px;
    }
 
-   .item img{
-    width: 500px !important;
-    height: 350px !important;
-    object-fit: cover;
-    border-radius:15px;
-  }
-   
+ 
 
    /*Projetos*/
-
-
-   .content{
-    height:100vh;
-    background-color: var(--fundo2);
-    padding: 50px;
-    margin-top:100px;
-   }
-
-.wrapper {
-  display: flex;
-  flex-wrap: wrap !important;
-  width: 100%;
-  padding: 0 1.5rem;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  gap:15px;
-}
-.polaroid {
-  background:#FFB9D2;
-  padding: 1.5rem;
-  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
-  border-radius:15px;
-  
-  
-}
-.polaroid > img{
-  max-width: 100%;
-  height: auto;
-}
-.caption {
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 2em;
-}
-.item {
-  width: 30%;
-  display: inline-block;
-  margin-top: 2rem;
-}
-.item .polaroid:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transition: all 0.35s;
-}
-.item:nth-of-type(4n+1) {
-  transform: scale(0.8, 0.8) rotate(5deg);
-  transition: all 0.35s;
-}
-
-.item2{
-    transform: rotate(0deg)  !important;
-}
-
-.item:nth-of-type(4n+1) .polaroid:before {
-  transform: rotate(6deg);
-  height: 20%;
-  width: 47%;
-  bottom: 30px;
-  right: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
-}
-.item:nth-of-type(4n+2) {
-  transform: scale(0.8, 0.8) rotate(-5deg);
-  transition: all 0.35s;
-}
-.item:nth-of-type(4n+2) .polaroid:before {
-  transform: rotate(-6deg);
-  height: 20%;
-  width: 47%;
-  bottom: 30px;
-  left: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
-}
-.item:nth-of-type(4n+4) {
-  transform: scale(0.8, 0.8) rotate(3deg);
-  transition: all 0.35s;
-}
-.item:nth-of-type(4n+4) .polaroid:before {
-  transform: rotate(4deg);
-  height: 20%;
-  width: 47%;
-  bottom: 30px;
-  right: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
-}
-.item:nth-of-type(4n+3) {
-  transform: scale(0.8, 0.8) rotate(-3deg);
-  transition: all 0.35s;
-}
-.item:nth-of-type(4n+3) .polaroid:before {
-  transform: rotate(-4deg);
-  height: 20%;
-  width: 47%;
-  bottom: 30px;
-  left: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
-}
-.item:hover {
-  filter: none;
-  transform: scale(1, 1) rotate(0deg) !important;
-  transition: all 0.35s;
-}
-.item:hover .polaroid:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transform: rotate(0deg);
-  height: 90%;
-  width: 90%;
-  bottom: 0%;
-  right: 5%;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
-  transition: all 0.35s;
-}
-
 
 /*Sobre*/
    .content2{
@@ -264,6 +138,11 @@ gap:20px;
     margin-top: 100px;
     flex-wrap: wrap !important;
 
+   }
+   
+
+   .poetas{
+    max-width: 600px;
    }
 
 
@@ -398,6 +277,11 @@ gap:10px;
 
  /* Estilos para telas menores (ex: smartphones) */
 @media (max-width: 768px) {
+ 
+  .contato p{
+    display: none;
+    opacity: 0;
+  }
 
   .projetos{
     display: block;
@@ -419,6 +303,20 @@ height: 100vh;
     margin-left:30px;
      text-align: center;
      width: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     right: 45px;
+  }
+
+  .landing-page .main-img{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
+    display: block;
+    position: absolute;
   }
 
   .conteudo{
@@ -498,13 +396,11 @@ height: 100vh;
     padding:20px;
     margin-top:300px;
   }
-  .poetas{
-    display: none;
-  }
+
 
 }
 /* Estilos para telas médias (notebooks, tablets) */
-@media (max-width: 1500px) {
+@media (max-width: 1300px) {
   .header ul {
       margin-right: 50px; /* Reduzindo a margem para telas médias */
   }
@@ -517,18 +413,25 @@ height: 100vh;
     opacity: 1;
   }
   
-  .wrapper{
-    display: none;
-    opacity: 0;
-  }
+  
 
   .landing-page {
       gap: 50px; /* Ajustando o espaçamento para telas médias */
       padding: 20px; /* Ajustando o espaçamento para telas médias */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      
+      
+  }
+
+  .texto-sobre{
+    padding:10px;
   }
 
   .main-img {
-      margin-left: 20px; /* Ajustando a margem para telas médias */
+      display:none;
+      opacity: 0;
   }
 
   .content {
@@ -546,10 +449,7 @@ height: 100vh;
       width: 45%; /* Reduzindo a largura para telas médias */
   }
 
-  .contato p{
-    display: none;
-    opacity: 0;
-  }
+  
   /* Adicione outras modificações necessárias para telas médias */
 }
 /* Estilos para telas médias (notebooks, tablets) */
@@ -562,10 +462,6 @@ height: 100vh;
     opacity: 1;
   }
   
-  .wrapper{
-    display: none;
-    opacity: 0;
-  }
 
   .main-logo {
       margin-left: 50px; /* Reduzindo a margem para telas médias */
@@ -580,11 +476,7 @@ height: 100vh;
       margin-left: 20px; /* Ajustando a margem para telas médias */
   }
   
-  .contato p{
-    display: none;
-    opacity: 0;
-  }
-
+ 
   .content {
       margin-top: 50px; /* Ajustando a margem para telas médias */
   }

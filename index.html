@@ -14,6 +14,51 @@
             margin-top: 80px;
             /* Altura do navbar fixo (ajuste conforme necessário) */
         }
+        .card {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 767.98px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Poetisa Ana Cristina</title>
@@ -67,40 +112,48 @@
         <img src="./img/main-img.png" class="main-img img-fluid" alt="Ana Cristina posando com a camiseta das DIVAS">
     </main>
 
-    <section class="content" role="region" aria-label="Projetos">
-        <h2 class="color2">Projetos</h2>
-
-        <div class="projetos">
-            <h3>Conheça meus projetos Apertando no botão abaixo:</h3>
-            <button class="button">Acessar Projetos</button>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-img-top">
+                <img width="500px" src="img/cantando.jpg" alt="Polaroid 1" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Projetos Música</h5>
+                <p class="card-text">Uma cantora maravilhosa!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-img-top">
+                <img src="img/boneca.jpeg" alt="Polaroid 2" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Artesanatos</h5>
+                <p class="card-text">Poetisa também é artesã.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-img-top">
+                <img src="img/poetas.jpg" alt="Polaroid 3" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Poesia</h5>
+                <p class="card-text">Poetisa faz poesias sobre conscientização, saiba mais!</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="wrapper">
-
-            <div class="item">
-                <div class="polaroid"><img  class="img-fluid" src="./img/cantando2.jpg" alt="Aperte para ir para a página de projetos, card de músicas">
-                    <div class="caption">Música</div>
-                </div>
-            </div>
-
-            <div class="item item2">
-                <div class="polaroid"><img  class="img-fluid" src="./img/boneca.jpeg" alt="Aperte para ir para a página de projetos, card de Artesanatos">
-                    <div class="caption">Artesanatos</div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="polaroid"><img  class="img-fluid" src="./img/poetas.jpg" alt="Aperte para ir para a página de projetos, card de poesias">
-                    <div class="caption">Poesia</div>
-                </div>
-            </div>
-
-        </div>
-    </section>
+      </div>
 
     <section class="content2" role="region" aria-label="Quem é Ana Cristina?">
         <div class="text-img">
             <img src="img/poetas.jpg" class="poetas" alt="Ana Cristina, sentada ao lado de poetas antigos.">
-        <img src="img/poetas.jpg" class="img-sobre-2" alt="Ana Cristina ao lado de poetas"> </img>
+      
             <div class="texto-sobre">
                 <h2 id="sobre">Quem é <span class="rosa">Ana Cristina?</span></h2>
                 <p>Meu nome é Ana Cristina Duarte. Sou educadora infantil e a pandemia me deixou compositora, poetisa e

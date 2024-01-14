@@ -12,10 +12,36 @@
 }
 
 
+
+
 .color{
   color: #FE5F99  !important;
 }
 
+.color2{
+  color:#46CC6B; 
+  font-weight: bold;
+  margin-left:20px;
+}
+
+.icon-name{
+  display: flex  !important;
+gap:10px !important;
+}
+
+.icon-name i{
+  font-size: 25px;
+}
+
+.redess{
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:30px !important;
+ 
+}
 
 
 :root {
@@ -33,12 +59,18 @@
     height: 70px;
 }
 
+p{
+  color:var(--text-color);
+  line-height:32px !important;
+}
+
 
 /*Botão*/
 
 .button {
   appearance: button;
-  width: 200px;
+  width: 220px;
+  height: 50px;
   background-color: #46CC6B;
   border: solid transparent;
   border-radius: 16px;
@@ -53,7 +85,7 @@
   line-height: 20px;
   margin: 0;
   overflow: visible;
-  padding: 13px 19px;
+  padding: 15px;
   text-align: center;
   text-transform: uppercase;
   touch-action: manipulation;
@@ -99,4 +131,9 @@
  
  .button:active {
   padding-bottom: 10px;
+ }
+
+
+ .rosa{
+  color:#FE5F99;
  }

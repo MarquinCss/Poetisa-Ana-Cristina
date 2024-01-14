@@ -1,3 +1,6 @@
+body{
+  background-color: var(--fundo2) !important;
+}
 .header{
     background-color: var(--fundo2) !important;
     
@@ -43,7 +46,7 @@
     animation: moveUpDown 2s infinite alternate ease-in-out;
     position: relative;
 
-    
+  
    
 }
 @keyframes moveUpDown {
@@ -76,6 +79,13 @@ display: flex;
 flex-direction: column;
 gap:20px;
    }
+
+   .item img{
+    width: 500px !important;
+    height: 350px !important;
+    object-fit: cover;
+    border-radius:15px;
+  }
    
 
    /*Projetos*/
@@ -85,13 +95,14 @@ gap:20px;
     height:100vh;
     background-color: var(--fundo2);
     padding: 50px;
+    margin-top:100px;
    }
 
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -99,8 +110,9 @@ gap:20px;
 }
 .polaroid {
   background:#FFB9D2;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  border-radius:15px;
   
   
 }
@@ -211,6 +223,7 @@ gap:20px;
 
     width: 600px;
     padding: 0;
+    border-radius: 15px;
 
    }
 
@@ -247,6 +260,7 @@ gap:20px;
     flex-direction: row;
     gap:100px;
     margin-top: 100px;
+    flex-wrap: wrap !important;
 
    }
 
@@ -261,9 +275,18 @@ gap:20px;
 
    }
 
+   .img-sobre-2{
+    opacity: 0;
+    display: none;
+  }
+
    .fotinhos img{
     width: 300px;
     height: 270px;
+   }
+
+   #sobre{
+  font-weight:bold;
    }
 
 
@@ -290,11 +313,13 @@ gap:20px;
     text-align: center;
     margin-left: 400px; /*No responsivo deve ficar no centro...*/
     z-index: 999;
-    
+    border-radius: 16px;
    }
 
    .contate-me h2{
-    margin-top:40px
+    margin-top:40px;
+    color:#46CC6B;
+    font-weight: bold;
    }
 
    form{
@@ -317,20 +342,26 @@ gap:10px;
     position: absolute;
     background-color:#FAD2E5;
     width:100%;
-    height: 200px;
+    height: 230px;
     margin-top:100px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
-
+  
  }
 
+ .projetos{
+  display:none;
+  opacity: 0;
+  text-align: center;
+}
+
  .contato .tira p{
-    max-width: 300px;
-    margin-right: 450px;
+    max-width: 500px;
+    margin-right: 600px;
+    font-weight: bold;
+    font-size: 24px;
   
  }
 
@@ -338,7 +369,7 @@ gap:10px;
     width: 168px;
     height:36px;
     background-color: #F8E5E5;
-
+    border-radius: 10px;
     border: none;
     padding: 0.8rem;
  }
@@ -348,7 +379,7 @@ gap:10px;
     width: 350px;
     height: 120px !important;
     background-color: #F8E5E5;
- 
+    border-radius: 10px;
     border: none;
     padding: 0.4rem;
     resize: none;
@@ -362,3 +393,203 @@ gap:10px;
   display: block;
   position: absolute;
  }
+
+ /* Estilos para telas menores (ex: smartphones) */
+@media (max-width: 768px) {
+
+  .projetos{
+    display: block;
+    opacity: 1;
+  }
+
+  .wrapper{
+    display: none;
+    opacity: 0;
+  }
+  .content{
+height: 100vh;
+  }
+  .landing-page {
+    margin-left:30px;
+     text-align: center;
+  }
+
+  .conteudo{
+    padding:30px;
+    text-align: center;
+  }
+  .landing-page .conteudo {
+    padding-bottom:100px;
+    text-align: center;
+ }
+
+  .landing-page h1 {
+     max-width: 100%;
+  }
+
+  .main-img {
+     display: none;
+  }
+
+  .content,
+  .content2,
+  .contato {
+     padding: 20px;
+  }
+
+  .texto-sobre{
+    padding:0 60px ;
+    margin-bottom:600px;
+  }
+
+  .wrapper {
+     padding: 0;
+  }
+
+  .item {
+    width: 190px;
+    height: 100px !important;
+  }
+
+  .contato .tira {
+     margin-top: 20px;
+  }
+
+  .contato .tira p {
+     margin-right: 0;
+  }
+
+  .contate-me {
+     margin-left: 0;
+     width: 100%;
+  }
+
+  .caption {
+    font-size:17px;
+  }
+  .item img {
+  display: none;
+}
+
+  .poetas{
+    display: none;
+  }
+  .text-img{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .img-sobre-2{
+    opacity: 1;
+    display: block;
+    width: 400px;
+    height: 400px;
+    padding:20px;
+    margin-top:300px;
+  }
+
+
+}
+/* Estilos para telas médias (notebooks, tablets) */
+@media (max-width: 1024px) {
+  .header ul {
+      margin-right: 50px; /* Reduzindo a margem para telas médias */
+  }
+
+  .main-logo {
+      margin-left: 50px; /* Reduzindo a margem para telas médias */
+  }
+  .projetos{
+    display: block;
+    opacity: 1;
+  }
+  
+  .wrapper{
+    display: none;
+    opacity: 0;
+  }
+
+  .landing-page {
+      gap: 50px; /* Ajustando o espaçamento para telas médias */
+      padding: 20px; /* Ajustando o espaçamento para telas médias */
+  }
+
+  .main-img {
+      margin-left: 20px; /* Ajustando a margem para telas médias */
+  }
+
+  .content {
+      margin-top: 50px; /* Ajustando a margem para telas médias */
+  }
+
+  .wrapper {
+      padding: 0 1rem; /* Ajustando o padding para telas médias */
+  }
+
+  .item {
+      width: 45%; /* Reduzindo a largura para telas médias */
+  }
+
+  .contato p{
+    display: none;
+  }
+  /* Adicione outras modificações necessárias para telas médias */
+}
+/* Estilos para telas médias (notebooks, tablets) */
+@media (max-width: 1024px) {
+  .header ul {
+      margin-right: 50px; /* Reduzindo a margem para telas médias */
+  }
+  .projetos{
+    display: block;
+    opacity: 1;
+  }
+  
+  .wrapper{
+    display: none;
+    opacity: 0;
+  }
+
+  .main-logo {
+      margin-left: 50px; /* Reduzindo a margem para telas médias */
+  }
+
+  .landing-page {
+      gap: 50px; /* Ajustando o espaçamento para telas médias */
+      padding: 20px; /* Ajustando o espaçamento para telas médias */
+  }
+
+  .main-img {
+      margin-left: 20px; /* Ajustando a margem para telas médias */
+  }
+
+  .content {
+      margin-top: 50px; /* Ajustando a margem para telas médias */
+  }
+
+  .wrapper {
+      padding: 0 1rem; /* Ajustando o padding para telas médias */
+  }
+
+  .item {
+      width: 45%; /* Reduzindo a largura para telas médias */
+  }
+
+  .poetas{
+    display:none;
+  }
+
+  .contato p{
+    display: block;
+    margin-left:40PX;
+  }
+
+  .texto-sobre{
+    margin-top:500px;
+  }
+
+  /* Adicione outras modificações necessárias para telas médias */
+}

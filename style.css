@@ -400,7 +400,7 @@ height: 100vh;
 
 }
 /* Estilos para telas médias (notebooks, tablets) */
-@media (max-width: 1300px) {
+@media (max-width: 1240px) {
   .header ul {
       margin-right: 50px; /* Reduzindo a margem para telas médias */
   }
@@ -408,6 +408,7 @@ height: 100vh;
   .main-logo {
       margin-left: 50px; /* Reduzindo a margem para telas médias */
   }
+  
   .projetos{
     display: block;
     opacity: 1;

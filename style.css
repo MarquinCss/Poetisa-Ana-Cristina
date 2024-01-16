@@ -84,6 +84,12 @@ gap:20px;
 
    /*Projetos*/
 
+.projet a{
+text-decoration: none !important;
+
+}
+
+
 /*Sobre*/
    .content2{
     display: flex;

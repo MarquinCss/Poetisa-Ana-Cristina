@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,13 @@
 
     <style>
         body {
-          margin-top: 80px; /* Altura do navbar fixo (ajuste conforme necessário) */
+            margin-top: 80px;
+            /* Altura do navbar fixo (ajuste conforme necessário) */
+            background-color:var(--fundo2);
         }
-              /* Adicione seu estilo aqui se necessário */
-              .conteudo-titulo {
+
+        /* Adicione seu estilo aqui se necessário */
+        .conteudo-titulo {
             transition: transform 0.5s, opacity 0.5s;
         }
 
@@ -26,31 +30,34 @@
         .main-projeto-img.image-transition {
             transform: translateY(20px);
         }
-      </style>
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Poetisa Ana Cristina - Projetos</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light header  fixed-top" role="navigation">
-        <a class="navbar-brand" href="#">
-            <img src="./img/main-logo.png" alt="Logo" width="200" height="120" class="d-inline-block align-top main-logo">
+        <a class="navbar-brand" href="index.html">
+            <img src="./img/main-logo.png" alt="Logo" width="200" height="120"
+                class="d-inline-block align-top main-logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                   <a class="nav-link" href="index.html">Página Inicial</a>
+                    <a class="nav-link" href="index.html">Página Inicial</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="projetos.html"><bold>Projetos</bold></a>
+                    <a class="nav-link" href="#musicas">Músicas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
+                    <a class="nav-link" href="#artesanatos">Artesanatos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link" href="#poemas">Poemas</a>
                 </li>
             </ul>
         </div>
@@ -67,28 +74,95 @@
                     <div class="icon">
                         <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path
-                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                fill="currentColor"
-                            ></path>
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"></path>
                         </svg>
                     </div>
                 </button>
             </div>
 
             <div class="main-projeto-img" aria-label=" Projetos">
-                <img src="musica.png" id="img-pro" height="280" width="280" alt="Imagem de música" aria-label="Imagem de música">
-            
-                <img id="blob" src="" class="magicpattern" alt="Imagem de padrão mágico" aria-label="Imagem de padrão mágico">
+                <img src="musica.png" id="img-pro" height="280" width="280" alt="Imagem de música"
+                    aria-label="Imagem de música">
+
+                <img id="blob" class="magicpattern img-fluid" alt="Imagem de padrão mágico"
+                    aria-label="Imagem de padrão mágico">
             </div>
         </div>
     </main>
     <!--Section músicas colocar Aria-label dps-->
-    <section  class="músicas">
-        
-    
+<div class="sessoes">
+    <section class="conteudo musicas">
+        <h2 id="musicas">Músicas</h2>
+        <div class="content">
+            <div class="conteudo-msc">
+
+                <a class="text-decoration-none" href="https://www.youtube.com/@anacristinaduarte5594">
+                    <figure>
+                        <figcaption>Não faça Bullying com ninguém!</figcaption>
+                        <iframe width="560" height="330"
+                            src="https://www.youtube.com/embed/92XPmNk8Wkk?si=Y-EMV1LrLOzcuspz"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                        </video>
+                    </figure>
+                </a>
+
+                <a class="text-decoration-none" href="https://www.youtube.com/watch?v=l3XP5zD7DTw">
+                    <figure>
+                        <figcaption>Lindas e Guerreiras</figcaption>
+                        <iframe width="560" height="330"
+                            src="https://www.youtube.com/embed/l3XP5zD7DTw?si=ry1plNI4U-7ywVKk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                        </video>
+                    </figure>
+                </a>
+
+            </div>
+            <button class="button2"> <p>Ouça mais nas principais plataformas digitais</p></button>
+            <div class="redes">
+                <svg xmlns="http://www.w3.org/2000/svg" height="80" width="120" viewBox="0 0 576 512">
+                    <path fill="#ff0000"
+                        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="80" width="100" viewBox="0 0 496 512">
+                    <path fill="#1ed760"
+                        d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z" />
+                </svg>
+
+
+            </div>
+        </div>
+        </div>
     </section>
 
+    <!--Artesanatos-->
+
+    <section class="conteudo artesanatos">
+        <h2 id="artesanatos">Artesanatos</h2>
+        <div class="content">
+            <div class="imagens">
+<img src="img/boneca.jpeg" class="img-fluid boneca" alt="Boneca feita com materiais recicláveis, essa é a rosa!">
+
+
+<img src=""  class="img-fluid" boneca alt="Boneca feita com materiais recicláveis, esse é o verde!">
+</div>
+
+<h2>Materiais:</h2>
+            </div>
+
+            </section>
+
+
+
+
+        </div>
 
 
 
@@ -98,63 +172,65 @@
 
 
 
-
-
-
-
-
-    <section class="">
+    <section class="footer">
         <!-- Footer -->
         <footer class="text-center text-white" style="background-color: var(--fundo2);">
-          <!-- Grid container -->
-          <div class="container p-4 pb-0">
-            <!-- Section: CTA -->
-            <section>
-              <p class="d-flex justify-content-center  text-black align-items-center">
-                <span class="me-3">  © Ana Cristina Duarte Poetisa, Educadora Infantil, Cantora e Artesã</span>
-              </p>
-              <div class="redess">
-              <p class="d-flex justify-content-center  text-black align-items-center redess">
-                <span class="me-3">  
-                    <!--Telefone-->
-               <div class="icon-name">
-                <i class="fas fa-phone-alt icon fa-2xs" style="color: #fe5f99;"></i> <p>+55 51984386201</p>
-    
-               </div>
-    
-                <!--INSTAGRAM--> 
-                <div class="icon-name">
-                    <i class="fab fa-instagram" style="color: #fe5f99;"></i> <p>@Cristinadointer</p>
-        
-                   </div>
-    
-                     <!--Youtube--> 
-                <div class="icon-name">
-                    <i class="fab fa-youtube icon" style="color: #fe5f99;"></i> <p>Ana Cristina Duarte</p>
-        
-                   </div>
-    
-    
-                </span>
-              </p>
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: CTA -->
+                <section>
+                    <p class="d-flex justify-content-center  text-black align-items-center">
+                        <span class="me-3"> © Ana Cristina Duarte Poetisa, Educadora Infantil, Cantora e
+                            Artesã</span>
+                    </p>
+                    <div class="redess">
+                        <p class="d-flex justify-content-center  text-black align-items-center redess">
+                            <span class="me-3">
+                                <!--Telefone-->
+                                <div class="icon-name">
+                                    <a href="https://w.app/poetisaCristinaDoInter"> <i
+                                            class="fas fa-phone-alt icon fa-2xs" style="color: #fe5f99;"></i> </a>
+                                    <a href="https://w.app/poetisaCristinaDoInter">
+                                        <p>+55 51 8597-9409</p>
+                                    </a>
+                                </div>
+                            </span>
+                            <!--INSTAGRAM-->
+                        <div class="icon-name">
+                            <a href="https://www.instagram.com/cristinadointer/"> <i class="fab fa-instagram"
+                                    style="color: #fe5f99;"></i></a>
+                            <a href="https://www.instagram.com/cristinadointer/">
+                                <p>@Cristinadointer</p>
+                            </a>
+                        </div>
+
+                        <!--Youtube-->
+                        <div class="icon-name">
+                            <a href="https://www.youtube.com/@anacristinaduarte5594"> <i class="fab fa-youtube icon"
+                                    style="color: #fe5f99;"></i> </a>
+                            <a href="https://www.youtube.com/@anacristinaduarte5594">
+                                <p>Ana Cristina Duarte</p>
+                            </a>
+                        </div>
+                        </p>
+                    </div>
+                </section>
+                <!-- Section: CTA -->
             </div>
-            </section>
-            <!-- Section: CTA -->
-          </div>
-          <!-- Grid container -->
-      
-          <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: rgba(160, 50, 123, 0.404)">
-            © 2024 Copyright
-            <a class="text-black" href="https://mdbootstrap.com/">Desenvolvedores</a>
-          </div>
-          <!-- Copyright -->
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(160, 50, 123, 0.404)">
+                © 2024 Copyright
+                <a class="text-black" href="https://mdbootstrap.com/">Desenvolvedores</a>
+            </div>
+            <!-- Copyright -->
         </footer>
         <!-- Footer -->
-      </section>
-        
-    
-        <img src="img/wpp.png" alt="Falar com a Ana Cristina no WhatsApp" id="icone-ponta" role="img" aria-label="Ícone do WhatsApp">
+    </section>
+
+    <img src="img/wpp.png" alt="Falar com a Ana Cristina no WhatsApp" id="icone-ponta" role="img"
+        aria-label="Ícone do WhatsApp">
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -162,4 +238,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="projetos.js"></script>
 </body>
+
 </html>

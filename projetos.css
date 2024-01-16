@@ -1,5 +1,5 @@
 main{
-    height: 80vh;
+    height:90vh;
     margin-top:120px;
     padding: 100px 200px;
     display: flex;
@@ -22,8 +22,74 @@ main .conteudo-titulo{
 
 main .divajuda{
     display: flex;
-    gap:99px;
+    gap:80px;
 }
+
+/*Botão*/
+
+.button2 {
+  appearance: button;
+  max-width: 550px;
+  height: 50px;
+  background-color:#d83372;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  overflow: visible;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+ }
+ 
+.button2:after {
+  background-clip: padding-box;
+  background-color:var(--titulorosa);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+ }
+ 
+
+ .button2:hover:not(:disabled) {
+  filter: brightness(1.1);
+ }
+ 
+  .button2:disabled {
+  cursor: auto;
+ }
+ 
+  .button2:active:after {
+  border-width: 0 0 0px;
+ }
+ 
+ .button2:active {
+  padding-bottom: 10px;
+ }
+
 
 .conteudo-titulo h2{
     font-size: 36px;
@@ -106,17 +172,167 @@ text-align: left;
 
 
   .magicpattern { 
-    width: 500px;
-    height: 500px;
+    max-height: 800px !important;
     background-size: cover;
     background-position: center center;
     background-repeat: repeat;
     position:relative;
     bottom:350px;
-    left:100px;
+    left:50px;
     z-index: 1;
   
   }
+
+  .sessoes{
+    display: flex;
+    flex-direction: column;
+    gap:70px;
+  }
+  /*Músicas*/
+
+  .conteudo{
+background-color: var(--fundo2);
+height: 100vh;
+  }
+
+  .content{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap:15px;
+  }
+
+  .conteudo-msc{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    padding: 50px;
+  }
+
+  .conteudo-msc figcaption{
+text-align: center;
+text-decoration: none;
+font-weight:700;
+font-size: 30px;
+color:var(--titulorosa);
+
+
+  }
+
+  .redes{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .conteudo h2{
+    font-size: 35px;
+color: var(--tituloverde);
+margin-top:20px;
+margin-left:30px;
+font-weight: 600;
+  }
+
+  /*Artesanatos*/
+.imagens{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  gap:40px;
+}
+
+.imagens .boneca{
+  width: 425px;
+  height: 493px;
+  border-radius:20px;
+  object-fit: cover;
+}
+
+
+
+  .footer{
+    margin-top:500px;
+  }
+
+
+  /*Responsividade*/
+  
+ /* Estilos para telas menores (ex: smartphones) */
+@media (max-width: 768px) {
+main{
+  max-width: 100vw !important;
+  height: 100vh;
+}
+
+
+
+ main .conteudo-titulo{
+  justify-content: center;
+  align-items: center;
+ }
+
+ main .divajuda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:50px;
+}
+
+
+main #img-pro{
+width: 200px;
+height: 200px;
+}
+
+
+.magicpattern{
+  display: none;
+}
+
+.artesanatos{
+  margin-top:300px;
+}
+
+#musicas{
+  margin-bottom:40px;
+}
+
+figcaption{
+font-size:20px !important;
+}
+
+iframe{
+  width: 300px;
+  height:300px;
+}
+
+.button2{
+
+}
+
+
+}
+@media (max-width: 1214px) {
+ 
+  .magicpattern{
+    width: 300px !important;
+    height: 300px !important;
+    left:200px;
+  }
+  .artesanatos{
+    margin-top:600px;
+  }
+
+
+}
+
+
+
 
 
   

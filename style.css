@@ -282,6 +282,14 @@ gap:10px;
     display: none;
     opacity: 0;
   }
+  #icone-ponta {
+  
+    bottom: 25px; 
+    right: 20px; 
+    width: 70px;
+    height: 70px;
+}
+
 
   .projetos{
     display: block;
@@ -408,6 +416,14 @@ height: 100vh;
   .main-logo {
       margin-left: 50px; /* Reduzindo a margem para telas médias */
   }
+  #icone-ponta {
+  
+    bottom: 25px; 
+    right: 20px; 
+    width: 70px;
+    height: 70px;
+}
+
   
   .projetos{
     display: block;
@@ -462,6 +478,14 @@ height: 100vh;
     display: block;
     opacity: 1;
   }
+  #icone-ponta {
+  
+    bottom: 19px; 
+    right: 15px; 
+    width: 70px;
+    height: 70px;
+}
+
   
 
   .main-logo {

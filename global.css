@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 /* Adicione estas regras de estilo ao seu arquivo de estilo CSS */
 .navbar-light .navbar-nav .nav-link {
   color: #FE5F99 !important; /* Verde - você pode ajustar o código de cor conforme desejado */
@@ -48,12 +53,14 @@ gap:10px !important;
     --fundo1: #FED9EA; 
     --fundo2: #F8E5E5; 
     --text-color:#525252;
+    --titulorosa:#FE5F99;
+    --tituloverde:#46CC6B;
   }
 
   #icone-ponta {
     position: fixed;
-    bottom: 10px; 
-    right: 10px; 
+    bottom: 40px; 
+    right: 40px; 
     z-index: 9999; 
     width: 70px;
     height: 70px;

@@ -18,6 +18,8 @@ main .conteudo-titulo{
     gap: 24px;
  
 }
+ 
+
 
 
 main .divajuda{
@@ -29,7 +31,7 @@ main .divajuda{
 
 .button2 {
   appearance: button;
-  max-width: 550px;
+  max-width: 600px;
   height: 50px;
   background-color:#d83372;
   border: solid transparent;
@@ -186,13 +188,12 @@ text-align: left;
   .sessoes{
     display: flex;
     flex-direction: column;
-    gap:70px;
+    gap:90px;
   }
   /*Músicas*/
 
   .conteudo{
 background-color: var(--fundo2);
-height: 100vh;
   }
 
   .content{
@@ -252,6 +253,11 @@ font-weight: 600;
   object-fit: cover;
 }
 
+/*Poesias*/
+
+.poesias{
+height: 100vh;
+}
 
 
   .footer{
@@ -268,7 +274,17 @@ main{
   height: 100vh;
 }
 
-
+.button2 {
+  font-size: 0.8rem; /* Ajuste o tamanho da fonte conforme necessário */
+  white-space: normal; /* Permitir que o texto quebre nas linhas */
+  height: 99px;
+}
+.imagens .boneca{
+  width: 125px;
+  height: 293px;
+  border-radius:20px;
+  object-fit: cover;
+}
 
  main .conteudo-titulo{
   justify-content: center;
@@ -284,6 +300,8 @@ main{
 }
 
 
+
+
 main #img-pro{
 width: 200px;
 height: 200px;
@@ -295,8 +313,9 @@ height: 200px;
 }
 
 .artesanatos{
-  margin-top:300px;
+  height: 100vh;
 }
+
 
 #musicas{
   margin-bottom:40px;
@@ -311,12 +330,16 @@ iframe{
   height:300px;
 }
 
-.button2{
 
+.poesias{
+ 
 }
 
 
 }
+
+
+
 @media (max-width: 1214px) {
  
   .magicpattern{
@@ -324,12 +347,16 @@ iframe{
     height: 300px !important;
     left:200px;
   }
-  .artesanatos{
-    margin-top:600px;
+
+
+  .boneca{
+    height: 200px;
   }
-
-
 }
+
+
+
+
 
 
 

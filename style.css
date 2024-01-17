@@ -3,7 +3,7 @@ body{
   background-color: var(--fundo2) !important;
 }
 .header{
-    background-color: var(--fundo2) !important;
+    background-color: var(--header) !important;
     
 }
 

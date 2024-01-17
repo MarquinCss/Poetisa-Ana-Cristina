@@ -51,7 +51,8 @@ gap:10px !important;
 
 :root {
     --fundo1: #FED9EA; 
-    --fundo2: #F8E5E5; 
+    --fundo2: #FDF5E6; 
+    --header:#F8E5E5;
     --text-color:#525252;
     --titulorosa:#FE5F99;
     --tituloverde:#46CC6B;

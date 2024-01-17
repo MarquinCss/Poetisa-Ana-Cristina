@@ -92,6 +92,10 @@ main .divajuda{
   padding-bottom: 10px;
  }
 
+ .conteudo .tit{
+  margin-left: 20px;
+ }
+
 
 .conteudo-titulo h2{
     font-size: 36px;
@@ -234,7 +238,7 @@ color:var(--titulorosa);
     font-size: 35px;
 color: var(--tituloverde);
 margin-top:20px;
-margin-left:30px;
+margin-left:110px !important;
 font-weight: 600;
   }
 
@@ -243,7 +247,7 @@ font-weight: 600;
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
-  gap:40px;
+  gap:240px !important;
 }
 
 .imagens .boneca{
@@ -270,17 +274,46 @@ main{
   height: 100vh;
 }
 
+.footer{
+margin-top:300px;
+}
+
 .button2 {
   font-size: 0.8rem; /* Ajuste o tamanho da fonte conforme necessário */
   white-space: normal; /* Permitir que o texto quebre nas linhas */
   height: 99px;
 }
-.imagens .boneca{
-  width: 125px;
-  height: 293px;
-  border-radius:20px;
-  object-fit: cover;
+
+#poesias{
+  margin-bottom: 500px;
 }
+.imagens{
+gap:20px !important;
+}
+
+
+
+.poesias{
+  margin-top:800px;
+}
+
+.tit{
+  margin:0 auto;
+}
+
+
+.imagens .boneca{
+  height:300px;
+  object-fit: contain;
+}
+
+
+.materiais{
+  margin-top:100px;
+  text-align:center;
+
+}
+
 
  main .conteudo-titulo{
   justify-content: center;

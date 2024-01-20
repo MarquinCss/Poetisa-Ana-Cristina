@@ -4,7 +4,7 @@ body{
 }
 .header{
     background-color: var(--header) !important;
-    
+    box-shadow: var(--header) 1px 5px 6px 1px;
 }
 
 
@@ -281,6 +281,44 @@ gap:10px;
   position: absolute;
  }
 
+/*FAQ*/
+.perguntas{
+  display: flex;
+  flex-direction: row;
+  gap:60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pergunta h3{
+  color: var(--titulorosa);
+  font-weight: bold;
+}
+
+.pergunta{
+max-width: 500px;
+}
+
+.pergunta p{
+ max-width: 500px;
+}
+
+.faq h2{
+  margin-bottom: 20px;
+  margin-left:140px;
+}
+
+.faq{
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+gap:50px;
+}
+
+
+ 
+
  /* Estilos para telas menores (ex: smartphones) */
 @media (max-width: 768px) {
  
@@ -430,6 +468,11 @@ height: 100vh;
     height: 70px;
 }
 
+.perguntas{
+  padding:20px;
+  flex-direction: column;
+  gap:30px;
+}
   
   .projetos{
     display: block;

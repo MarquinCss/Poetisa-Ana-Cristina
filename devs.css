@@ -4,10 +4,10 @@ main{
   text-align: left;
   padding: 90px 0;
   background-color: #F8E5E5;
-  margin-top:100px;
  justify-content: center;
  align-items: center;
  overflow: hidden;
+
 
 }
 
@@ -58,7 +58,29 @@ main .cont{
     text-align: center;
     padding:50px 20px;
     border-radius: 230px 230px 0 0;
+    transition: .5s;
 
+}
+
+
+.sociais{
+    display: flex;
+    gap:30px;
+}
+
+.sociais .red{
+    font-size:35px;
+    background-color:var(--tituloverde);
+    padding:10px;
+    border-radius: 50px;
+}
+
+
+.sociais .reed{
+    font-size:35px;
+    background-color:var(--titulorosa);
+    padding:10px;
+    border-radius: 50px;
 }
 
 .card h2,h3{
@@ -74,10 +96,259 @@ main .cont{
 /*Section Redes*/
 .redes{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.redes .cartas{
+    display: flex;
+    flex-wrap: wrap;
+    gap:45px;
+    margin-top:100px;
+}
+
+.redes .carta{
+    max-width: 550px;
+}
+
+
+.carta{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+
+
+.carta p{
+    max-width: 520px;
+    font-size: 22px;
+    text-align:left;
+   /* height:230px; */
+}
+
+
+.ma h2{
+    color: var(--titulorosa);
+}
+
+.fe h2{
+color: var(--tituloverde);
+}
+
+.carta h2{
+    font-weight: 700;
 }
 
 
 /*Section FAQ*/
+
 .faque{
-    height: 100vh;
+    height:90vh;
+  
 }
+
+.faque h2{
+    margin-left: 120px;
+    font-weight: 700;
+}
+
+
+/* ----------------------------- FAQ -------------------------------- */
+.faq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    position:relative; /* ou relative, dependendo do contexto */
+    top: 40%;
+    left: 50%;
+    max-width: 900px;
+    transform: translate(-50%, -50%);
+
+}
+
+.accordion-item {
+    background-color:transparent; /* White background for items */
+    border: 1px solid #E0E0E0; /* Light border */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Softer shadow */
+}
+
+.accordion-header {
+    max-width: 910px !important;
+    border:3px solid black !important;
+    background-color: transparent;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    transition: background-color 0.3s ease;
+    color: #000;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.accordion-header:hover {
+    background-color:#e6ddce;
+}
+
+.accordion-content {
+    background-color: #FAFAFA; /* Very light grey for content */
+    overflow: hidden;
+    padding: 0 15px;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+
+}
+
+.accordion-content p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.active .icon {
+    transform: rotate(45deg);
+}
+
+
+
+/*Section de convite*/
+
+.final{
+height: 80vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+background-color: #FFE7D7;
+}
+
+.final_content{
+   margin-top:200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:50px;
+}
+
+.final_content h2{
+    color: #F86600;
+font-size: 30px;
+font-weight: 700;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.final_content button{
+    width: 490px;
+    height: 72px;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    background-color: #FFA362;
+    border: none;
+    color:#212121;
+    border-radius:30px;
+    text-align:center;
+    
+}
+
+
+@media (max-width: 991px) {
+
+    .faq-title h2 {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .faque{
+      margin-top:650px;
+    }
+
+    .accordion-container{
+        padding: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+  /*Responsividade*/
+  
+ /* Estilos para telas menores (ex: smartphones) */
+ @media (max-width: 768px) {
+.cont{
+    text-align: center;
+    height: 80vh;
+    margin-top:150px;
+}
+
+.final_content h2{
+font-size: 24px;
+max-width: 400px;
+padding: 30px;
+text-align: center;
+
+}
+
+.final_content button{
+    width: 290px;
+    height: 52px; 
+    font-size: 26px;
+}
+
+
+.cards{
+    display: none; /*Tira as img/card*/
+}
+
+.carta{
+    padding:20px;
+
+}
+
+.faque{
+    margin-top:650px;
+}
+
+.accordion-container{
+    padding: 20px;
+    margin-top:150px;
+}
+
+.faque h2{
+    margin: 0 auto;
+    text-align: center;
+}
+
+ }
+

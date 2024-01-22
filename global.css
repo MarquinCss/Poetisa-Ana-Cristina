@@ -26,7 +26,6 @@ html{
 .color2{
   color:#46CC6B; 
   font-weight: bold;
-  margin-left:20px;
 }
 
 .icon-name{
@@ -53,7 +52,7 @@ gap:10px !important;
     --fundo1: #FED9EA; 
     --fundo2: #FDF5E6; 
     --header:#f8e5e5;
-    --text-color:#525252;
+    --text-color:#212121;
     --titulorosa:#FE5F99;
     --tituloverde:#46CC6B;
   }

@@ -89,6 +89,28 @@ text-decoration: none !important;
 
 }
 
+.card-body{
+background-color:var(--header);
+color:var(--textcolor);
+border-radius:0 0 20px 20px;
+box-shadow: none !important;
+
+}
+  .card-img-top{
+    border-radius: 20px 20px 0 0 !important;
+  }
+
+
+  .card{
+    border-radius: 600px !important;
+    box-shadow: none !important;
+  }
+
+  .card-title{
+    color: var(--titulorosa);
+    font-weight: 600;
+  }
+
 
 /*Sobre*/
    .content2{
@@ -103,7 +125,7 @@ text-decoration: none !important;
 
    .content2 .poetas{
 
-    width: 600px;
+    max-width: 600px;
     padding: 0;
     border-radius: 15px;
 
@@ -286,8 +308,8 @@ gap:10px;
   display: flex;
   flex-direction: row;
   gap:60px;
-  justify-content: center;
-  align-items: center;
+  margin-right: 160px;
+  margin-left:160px;
 }
 
 .pergunta h3{
@@ -297,15 +319,16 @@ gap:10px;
 
 .pergunta{
 max-width: 500px;
+text-align: left;
 }
 
 .pergunta p{
- max-width: 500px;
+ max-width: 450px;
 }
 
 .faq h2{
   margin-bottom: 20px;
-  margin-left:140px;
+  margin-left:160px;
 }
 
 .faq{
@@ -335,11 +358,28 @@ gap:50px;
 }
 
 
+.faq h2{
+  text-align: center;
+ margin: 0 auto;
+}
+
+
+.perguntas{
+  max-width: 400px;
+  padding:20px;
+  margin: 0 auto;
+}
+
+
   .projetos{
     display: block;
     opacity: 1;
   }
 
+  .title{
+    margin-left:160px;
+    padding:0;
+  }
   .wrapper{
     display: none;
     opacity: 0;

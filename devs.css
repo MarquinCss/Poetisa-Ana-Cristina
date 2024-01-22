@@ -93,6 +93,12 @@ main .cont{
   height:550px;
 }
 
+
+.cards .feh img{
+    width:401px;
+    height: 974px;
+}
+
 /*Section Redes*/
 .redes{
     height: 100vh;

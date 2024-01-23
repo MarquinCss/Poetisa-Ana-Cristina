@@ -94,10 +94,7 @@ main .cont{
 }
 
 
-.cards .feh img{
-    width:401px;
-    height: 974px;
-}
+
 
 /*Section Redes*/
 .redes{
@@ -297,6 +294,7 @@ text-align: left;
 
     .accordion-container{
         padding: 20px;
+        top: 30%;
     }
 
 

@@ -61,11 +61,11 @@ body{
 .landing-page h1{
     max-width: 300px;
     font-weight: 800;
-    color:#46CC6B;
+    color:var(--tituloverde);
 }
 
 .landing-page span{
-   color: #FE5F99;
+   color: var(--titulorosa);
 }
 
 .landing-page p{
@@ -172,7 +172,7 @@ gap:20px;
    */
  
    .content2 #sobre{
-    color: #46CC6B;;
+    color:var(--tituloverde);
    }
 
 
@@ -238,7 +238,7 @@ gap:20px;
    }
 
    .contate-me{
-    background-color: #FFC2E1;
+    background-color:var(--titulorosa);
     width: 406px;
     height: 400px;
     text-align: center;
@@ -249,8 +249,14 @@ gap:20px;
 
    .contate-me h2{
     margin-top:40px;
-    color:#46CC6B;
+    color:#FFF8F8;
     font-weight: bold;
+   }
+
+
+   form .btn-form{
+    background-color: #FAD2E5;
+    color: var(--tituloverde);
    }
 
    form{
@@ -299,7 +305,7 @@ gap:10px;
  form input{
     width: 168px;
     height:36px;
-    background-color: #F8E5E5;
+    background-color: #FDF5E6;
     border-radius: 10px;
     border: none;
     padding: 0.8rem;
@@ -309,7 +315,7 @@ gap:10px;
  form textarea{
     width: 350px;
     height: 120px !important;
-    background-color: #F8E5E5;
+    background-color: #FDF5E6;
     border-radius: 10px;
     border: none;
     padding: 0.4rem;

@@ -16,6 +16,7 @@ main .conteudo-titulo{
     flex-direction: column;
     max-width:750px;
     gap: 24px;
+    margin-top:80px;
  
 }
  
@@ -126,7 +127,6 @@ text-align: left;
     letter-spacing: 0.05em;
     display: flex;
     align-items: center;
-    box-shadow: inset 0 0 1.6em -0.6em #714da6;
     overflow: hidden;
     position: relative;
     height: 2.8em;
@@ -147,7 +147,6 @@ text-align: left;
     height: 2.2em;
     width: 4.2em;
     border-radius: 0.7em;
-    box-shadow: 0.1em 0.1em 0.6em 0.2em #e206d0;
     right: 0.3em;
     transition: all 0.3s;
   }
@@ -155,12 +154,14 @@ text-align: left;
   .cssbuttons-io-button:hover .icon {
     width: calc(100% - 0.6em);
   }
+
+
   
 
   .cssbuttons-io-button .icon svg {
     width: 4.1em;
     transition: transform 0.3s;
-    color: #FE5F99;
+    color: #0ea34c;
   }
   
   .cssbuttons-io-button:hover .icon svg {
@@ -174,6 +175,9 @@ text-align: left;
   #img-pro{
     position: relative;
     z-index: 2;
+    position:relative;
+    left:160px;
+    bottom:-50px;
   }
 
 
@@ -184,7 +188,7 @@ text-align: left;
     background-repeat: repeat;
     position:relative;
     bottom:350px;
-    left:50px;
+    left:160px;
     z-index: 1;
   
   }
@@ -221,7 +225,7 @@ gap:15px;
   .conteudo-msc figcaption{
 text-align: center;
 text-decoration: none;
-font-weight:700;
+font-weight:500;
 font-size: 30px;
 color:var(--titulorosa);
 
@@ -250,6 +254,13 @@ font-weight: 600;
   gap:50px !important;
 }
 
+
+.tit-mu{
+  color: var(--titulorosa) !important;
+  margin-top:50px !important;
+  font-weight: bold;
+}
+
 .imagens .boneca{
   width: 425px;
   height: 493px;
@@ -261,6 +272,10 @@ font-weight: 600;
 
 .poesias{
 height: 100vh;
+}
+
+.tit-m{
+  color:var(--marrom) !important;
 }
 
 
@@ -291,6 +306,10 @@ margin-top:300px;
 gap:20px !important;
 }
 
+#img-pro{
+  width: 250px;
+  height: 300px;
+}
 
 
 .poesias{
@@ -331,11 +350,6 @@ gap:20px !important;
 
 
 
-main #img-pro{
-width: 200px;
-height: 200px;
-}
-
 
 .magicpattern{
   display: none;
@@ -352,6 +366,7 @@ height: 200px;
 
 figcaption{
 font-size:20px !important;
+
 }
 
 iframe{

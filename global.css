@@ -13,18 +13,18 @@ html{
 
 /* Adicione estas regras de estilo ao seu arquivo de estilo CSS */
 .navbar-light .navbar-nav .nav-link {
-  color: #FE5F99 !important; /* Verde - você pode ajustar o código de cor conforme desejado */
+  color: var(--titulorosa) !important; /* Verde - você pode ajustar o código de cor conforme desejado */
 }
 
 
 
 
 .color{
-  color: #FE5F99  !important;
+  color: var(--titulorosa)!important;
 }
 
 .color2{
-  color:#46CC6B; 
+  color:var(--tituloverde); 
   font-weight: bold;
 }
 
@@ -53,8 +53,11 @@ gap:10px !important;
     --fundo2: #FDF5E6; 
     --header:#f8e5e5;
     --text-color:#212121;
-    --titulorosa:#FE5F99;
-    --tituloverde:#46CC6B;
+    --titulorosa:#7E032F;
+    --rosaantigo:#FE5F99;
+    --tituloverde:#154B24;
+    --verdeantigo:#46CC6B;
+    --marrom:#753203;
   }
 
   #icone-ponta {
@@ -78,7 +81,7 @@ p{
   appearance: button;
   width: 220px;
   height: 50px;
-  background-color: #46CC6B;
+  background-color: var(--tituloverde);
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -107,7 +110,7 @@ p{
  
 .button:after {
   background-clip: padding-box;
-  background-color: #1cf65d;
+  background-color: #219443;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;

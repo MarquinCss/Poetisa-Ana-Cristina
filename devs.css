@@ -70,7 +70,7 @@ main .cont{
 
 .sociais .red{
     font-size:35px;
-    background-color:var(--tituloverde);
+    background-color:var(--verdeantigo);
     padding:10px;
     border-radius: 50px;
 }
@@ -78,7 +78,7 @@ main .cont{
 
 .sociais .reed{
     font-size:35px;
-    background-color:var(--titulorosa);
+    background-color:var(--rosaantigo);
     padding:10px;
     border-radius: 50px;
 }
@@ -88,7 +88,7 @@ main .cont{
 }
 
 .cards .feh{
-  background-color: #46CC6B;
+  background-color: var(--verdeantigo);
   margin-top:50px;
   height:550px;
 }

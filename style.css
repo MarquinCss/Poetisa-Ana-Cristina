@@ -84,6 +84,12 @@ gap:20px;
 
    /*Projetos*/
 
+/*btn que some no pc*/
+.button-rep{
+  display: none;
+}
+
+
 .caart{
   padding-top:150px;
   height: 80vh;
@@ -389,6 +395,48 @@ gap:50px;
     right: 20px; 
     width: 70px;
     height: 70px;
+}
+
+/*btn que aparece no celular*/
+.caart{
+  padding-top:120px;
+  height: 40vh;
+}
+
+.carddes{
+  display: none;
+}
+
+.button-rep{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  padding: 12px;
+}
+
+
+.button-rep button{
+  padding: 25px;
+  background-color: var(--titulorosa);
+  color: #fff;
+  font-size:22px;
+  font-weight: bold;
+
+}
+
+
+.button-rep img{
+  border-radius: 20px;
+  filter: grayscale(1);
+  transition: .3s;
+}
+
+.button-rep img:hover{
+  border-radius: 250px;
+  filter:contrast(1);
 }
 
 

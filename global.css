@@ -147,3 +147,33 @@ p{
  .rosa{
   color:#FE5F99;
  }
+
+
+ .ft{
+  background-color: var(--titulorosa) !important;
+ }
+
+ .ft .copy{
+  color:var(--titulorosa);
+  font-weight: 600;
+ }
+
+ .ft .copy-dev{
+  color:var(--titulorosa);
+  font-weight: 600;
+  background-color: #FE5F99;
+  padding:5px;
+  border-radius:20px;
+  transition:.6s;
+ }
+
+ .ft .copy-dev:hover{
+  background-color: #7c0d36;
+  color:#fff;
+ }
+
+ .cs-f{
+  display: flex;
+  gap:50px;
+  flex-wrap: wrap;
+ }

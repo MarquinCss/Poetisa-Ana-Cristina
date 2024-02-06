@@ -356,6 +356,10 @@ main{
   height: 100vh;
 }
 
+.ft{
+margin-top:19rem;
+}
+
 .reciclaveis{
   gap: 20px;
   padding: 30px;

@@ -83,13 +83,13 @@ main .cont{
     border-radius: 50px;
 }
 
-.card h2,h3{
+.inf h2,h3{
     color: #FFF8F8;
 }
 
 .cards .feh{
   background-color: var(--tituloverde);
-  margin-top:50px;
+  margin-top:10px;
   height:550px;
 }
 

@@ -83,7 +83,11 @@ main .cont{
     border-radius: 50px;
 }
 
-.cards .inf h3,h4{
+.cards .inf h3{
+    color: #FFF8F8;
+}
+
+.cards .inf h4{
     color: #FFF8F8;
 }
 

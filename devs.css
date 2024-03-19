@@ -87,8 +87,7 @@ main .cont{
     color: #FFF8F8;
 }
 
-.cards .feh{
-  background-color: var(--tituloverde);
+.cards .cd-img{
   margin-left: -20px;
 }
 

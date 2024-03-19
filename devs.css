@@ -89,6 +89,7 @@ main .cont{
 
 .cards .feh{
   background-color: var(--tituloverde);
+  margin-left: -20px;
 }
 
 

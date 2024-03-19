@@ -84,11 +84,11 @@ main .cont{
 }
 
 .card h2,h3{
-    font-size: 22px;
+    color: #FFF8F8;
 }
 
 .cards .feh{
-  background-color: var(--verdeantigo);
+  background-color: var(--tituloverde);
   margin-top:50px;
   height:550px;
 }
